@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="10dp"
+    android:layout_marginBottom="10dp"
+    android:paddingStart="2dp"
+    android:paddingEnd="2dp"
+    tools:context=".adapter">
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="101dp"
+        android:layout_height="85dp"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/mu"
+        tools:src="@drawable/mu" />
+
+    <TextView
+        android:id="@+id/title_music"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+
+        android:ellipsize="marquee"
+        android:fontFamily="sans-serif-black"
+        android:foregroundGravity="center"
+        android:gravity="center"
+        android:marqueeRepeatLimit="marquee_forever"
+        android:nestedScrollingEnabled="false"
+        android:scrollHorizontally="true"
+        android:singleLine="true"
+        android:text="TextView"
+        android:textColor="#F2803D"
+        android:textColorLink="#06475B"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/imageView2"
+        app:layout_constraintTop_toTopOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>
